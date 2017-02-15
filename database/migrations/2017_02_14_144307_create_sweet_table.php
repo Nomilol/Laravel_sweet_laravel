@@ -18,6 +18,7 @@ class CreateSweetTable extends Migration
         $table->string('name');
         $table->integer('stock')->default(0);
         $table->nullableTimestamps();
+      Schema::rename('sweet', 'sweets');
       });
     }
 
